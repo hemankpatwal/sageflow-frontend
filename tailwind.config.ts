@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import forms from "@tailwindcss/forms";
 
 export default {
   content: [
@@ -10,14 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
         primary: "#0070f3",
-      },
-      fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        secondary: "#6c757d",
+        success: "#28a745",
+        danger: "#dc3545",
+        warning: "#ffc107",
+        info: "#17a2b8",
+        light: "#f8f9fa",
+        dark: "#343a40",
       },
     },
   },
-  plugins: [forms],
+  plugins: [],
 } satisfies Config;
